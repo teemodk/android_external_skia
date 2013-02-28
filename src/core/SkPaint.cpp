@@ -166,7 +166,7 @@ extern "C" {
                               "ldm     r4,  {r0-r2} \n"
                               "stm     r12, {r0-r2} \n"
                               :
-                              : "r" (src), "r" (dst)
+                              : "r" (dst), "r" (src)
                               : "r0", "r1", "r2", "r3", "r4", "r5", "r6", "r12");
 #else
         memcpy(dst, src, 76);
